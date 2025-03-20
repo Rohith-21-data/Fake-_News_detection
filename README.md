@@ -39,6 +39,26 @@ Each article consists of the following attributes:
 4. **Long Short-Term Memory (LSTM)**
 5. **Convolutional Neural Networks (CNN)**
 
+### Hyperparameter Tuning for LSTM & CNN
+To enhance the model performance, hyperparameter tuning was performed for LSTM and CNN. The following parameters were optimized:
+
+#### LSTM Hyperparameter Tuning:
+- **Batch Size:** Tested values [32, 64, 128]
+- **Embedding Dimension:** 100
+- **LSTM Units:** 150
+- **Dropout:** 0.4
+- **Epochs:** 5
+- **Optimizer:** Adam
+
+#### CNN Hyperparameter Tuning:
+- **Batch Size:** Tested values [32, 64, 128]
+- **Embedding Dimension:** 150
+- **Conv1D Filters:** 128
+- **Kernel Size:** 5
+- **Activation Function:** ReLU
+- **Pooling Layer:** GlobalMaxPooling1D
+- **Optimizer:** Adam
+
 ### Evaluation Metrics
 The models were evaluated using:
 - **Accuracy**
@@ -50,7 +70,7 @@ The models were evaluated using:
 ## Results
 - The **Random Forest classifier** achieved the highest accuracy of **99.84%**.
 - **CNN performed better than LSTM**, achieving **98.98% accuracy**.
-- **Larger batch sizes** improved deep learning model performance.
+- **Larger batch sizes and optimized hyperparameters improved deep learning model performance.**
 
 ## Future Improvements
 - Implementing **BERT** or **GPT-based transformers** for enhanced text classification.
@@ -78,5 +98,4 @@ Ensure you have the following installed:
    jupyter notebook final_fake__desertation_(2).ipynb
    ```
 3. Run the notebook cells to train and evaluate the models.
-
 
